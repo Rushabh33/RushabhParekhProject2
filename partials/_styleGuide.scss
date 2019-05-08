@@ -1,0 +1,107 @@
+$primary: #effdf3;
+$styleColor1: #fdfa69;
+$styleColor2: #4ceea7;
+$styleColor3: #267753;
+$white: #fafafa;
+$white2fade: rgba(243, 243, 243, 0.8); 
+$black: #2c2c2c;
+$playFair: 'Playfair Display', serif;
+$roboto: 'Roboto', sans-serif;
+$fWb: 700;
+$fSi: italic;
+$fSn: normal;
+$fWNorm: normal;
+$baseFontSize: 125%;
+$color: $black;
+$letS1: 1px;
+$letS11: 1.1px;
+$letSNorm: normal;
+$lineHNorm: normal;
+$lineH32: 32px;
+$lineH29: 29px;
+$lineH92: 92px;
+$tTc: capitalize;
+$tTu: uppercase;
+
+
+
+@mixin font($sizeValuePX, $fontWeight, $fontStyle, $lineHeight, $letSpace, $fontChoice, $transform) {
+    font-size: ($sizeValuePX/20) * 1rem;
+    color: $color;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    line-height: $lineHeight;
+    font-family: $fontChoice;
+    letter-spacing: $letSpace;
+    text-transform: $transform;
+  }
+
+h1 {
+  @include font(138, $fWb, $fSi, $lineHNorm, $lineHNorm, $playFair, $tTu);
+}
+
+.blogMainTitle h1,
+.contactMainTitle h1 {
+  @include font(85, $fWb, $fSi, $lineHNorm, $lineHNorm, $playFair, $tTu);
+}
+
+h2 {
+  @include font(42, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
+}
+
+h3 {
+  @include font(32, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
+}
+
+
+h4 {
+  @include font(25, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
+}
+
+
+li a {
+  @include font(20, $fWb, $fSi, $lineH29, $letS1, $playFair, $tTu);
+  text-decoration: none;
+  color: $black;
+}
+
+.button,
+button {
+  @include font(20, $fWb, $fSi, $lineH32, $letS1, $playFair, $tTu); 
+  text-decoration: none;
+}
+
+p {
+  @include font(20, $fWNorm, $fSn, $lineH32, $letSNorm, $roboto, $tTc);
+  text-align: left;
+  padding: 25px 0 60px;
+}
+
+.blogBlogCon p {
+  @include font(20, $fWNorm, $fSn, $lineH32, $letSNorm, $roboto, $tTc);
+  padding: 0;
+}
+
+.asideContent p {padding: 20px 0 40px;}
+
+
+.blogBlogContent .dateP {
+  @include font(20, $fWNorm, $fSn, $lineH32, $letSNorm, $roboto, $tTc);
+  padding: 5px 0 10%;
+}
+
+.commentBox .dateP {margin-bottom: 15px;}
+
+.contactInfo p {padding: 0;}
+
+.email {
+  @include font(26, $fWb, $fSi, $lineHNorm, $letS11, $playFair, $tTu);
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $black;
+  opacity: 1;
+}

@@ -1,0 +1,167 @@
+// Header styles *****************************
+
+.homeHeader {
+    min-height: 80vh;
+    text-align: center;
+    @include bkgImg($ImgHeader);
+}
+
+.homeMainTitle {
+    text-transform: uppercase;
+    margin-top: 49vh;
+    z-index: 2;
+    position: relative;
+}
+
+.homeHeaderBoximg  {
+    @include bkgImg($ImgHeaderBox);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 43vw;
+    height: 68vh;
+    z-index: 1;
+    margin-top: 23vh; 
+    box-shadow: 0 0 0 40px $styleColor1;
+}
+
+// WHAT is CAPTURE: styles *****************************
+
+.homeAboutCon {background-color: $primary;}
+
+ .aboutText {
+     text-align: center;
+     padding: 15% 5%;
+ } 
+
+// UNLOCK and GEAR *****************************
+
+.homeBlog {position: relative;}
+
+.homeBlogImg1,
+.homeBlogImg2,
+.homeImgLeft, 
+.homeImgRight {height: 100%;}
+
+.homeBlogImg1,
+.homeBlogImg2{
+    width: 50%;
+    position: absolute;
+}
+
+.homeImgLeft, 
+.homeImgRight {width: 100%;}
+
+.homeBlogImg1 {
+    top: -50px;
+    left: 0;
+    padding-right: 90px;  
+}
+
+.homeImgLeft {
+    @include bkgImg($ImgLeft);
+    box-shadow: 50px 45px 0 -15px $styleColor1;
+}
+
+.homeBlogImg2 {
+    top: 50px;
+    right: 0; 
+    padding-left: 90px;
+}
+
+.homeImgRight {
+    @include bkgImg($ImgRight);
+    box-shadow: -50px 45px 0 -15px $styleColor1;
+}
+
+.homeBlogTextCon,
+.homeBlogTextCon2 {display: flex;}
+
+.homeBlogTextCon {justify-content: flex-end;}
+
+.homeBlogText,
+.homeBlogText2 {width: 50%;}
+
+.homeBlogText {
+    margin-left: 5%;
+    padding: 7% 0 7% 90px;
+}
+
+.homeBlogText2 {
+    padding: 7% 90px 7% 0;
+    text-align: right;
+}
+
+// comp values styles *****************************
+
+.homeProdValueSec {
+    background-color: $primary;
+    padding:  10% 0 2.5%;
+}
+
+.homeProdValueCon,
+.homeProdValue {
+    display: flex;
+}
+
+.homeProdValueCon {
+    flex-wrap: wrap;
+}
+
+.homeProdValue {
+    width: 50%;
+    .fa-stack {margin-right: 10px;}
+    .fa-circle {color: $styleColor2;}
+}
+
+.homeValueContent {width: calc(90% - 10px);}
+
+// mapIMG section styles *****************************
+
+.homeMapImg {
+    min-height: 40vh;
+    @include bkgImg($ImgMap);
+}
+
+// profilesShowCase styles *****************************
+
+.homeShowCase {background-color: $primary;}
+
+.homeShowCaseCon {
+    display: flex;
+    padding: 7% 0;
+
+    .showCaseText {width: 70%;}
+    
+    .showCaseImg {
+        width: calc(30% - 10%);
+        margin-right: 10%;
+        @include bkgImg($ImgProfile);
+        box-shadow: 35px 35px 0 0px $styleColor1;
+    }
+}
+
+// Gallery styles *****************************
+
+.homeGallery {
+    display: flex;
+    height: 60vh;
+    padding: 4% 0;
+
+    div {
+        width: calc((100% / 3) - 1%);
+        margin-right: 2%;
+    }
+}
+
+.gallImg1 {@include bkgImg($ImgGall1);}
+
+.gallImg2 {@include bkgImg($ImgGall2);}
+
+.gallImg3 {
+    @include bkgImg($ImgGall3);
+    margin-right: none;
+}
+
+
+

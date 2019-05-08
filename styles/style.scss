@@ -1,0 +1,98 @@
+@import "../partials/setup.scss";
+@import "../partials/styleGuide";
+@import "../partials/layoutVariables";
+@import "../partials/homeStyles";
+@import "../partials/blogStyles";
+@import "../partials/contactStyles";
+
+
+// Universal styles *****************************
+
+html {font-size: $baseFontSize;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 3840px; // the highest a 4k screen normally goes. Really just an arbitrary number in this case. 
+    width: 80%;
+    margin: 0 auto;
+}
+
+// top nav bar across each page *****
+
+.navHeaderCon {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navHeader {
+    width: 50%;
+    margin-top: 30px;
+    ul  {
+        display: flex; 
+        justify-content: flex-end;
+        list-style: none;
+        li {margin-left: 9%;}
+        li:hover,
+        li:focus {
+            text-decoration: underline;
+            text-decoration-color: $styleColor2;
+        }
+        li:active a{
+            color: $styleColor3;
+        }
+    } 
+}
+
+// From style across pages *****
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+
+
+// link that look like Buttons styles *****
+
+button,
+.button {background-color: $styleColor2;}
+
+button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.button {padding: 14px;}
+
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
+    background-color: $styleColor3;
+}
+button:active,
+.button:active {
+    background-color: $white;
+}
+
+// copyright styles *****
+
+.copyright {background-color: black;}
+
+.copyright p {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+@import "../partials/mediaQueries";
+

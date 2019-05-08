@@ -1,0 +1,134 @@
+// Header styles *****************************
+
+.blogHeader {
+    min-height: 80vh;
+    @include bkgImg($ImgBlogHeader);
+}
+
+.blogMainTitle {
+    display: inline-block;
+    margin: 25vh 45% 0;
+}
+
+// blogBODY styles *****************************
+
+.blogBody {
+    background-color: $primary;
+    position: relative;
+}
+
+.blogBlogCon {display: flex;}
+
+.blogAside {width: 35%;}
+
+.blogMain {width: 65%;}
+
+.blogContentImg {
+    min-height: 70vh;
+    @include bkgImg($ImgBlogPost);
+    margin-top: -30vh;
+    position: relative;
+    width: 63vw;
+    left: 25px; 
+    bottom: 25px;
+    box-shadow: -45px 45px 0 -20px $styleColor1;  
+}
+
+.blogBlogContent {
+    padding-top: 7%;    
+    padding-left: 6%;
+    border-left: 5px solid $styleColor1;
+    border-bottom: 5px solid $styleColor1;
+}
+
+// aside styles *****************************
+
+.blogAside {
+    padding-right: 50px;
+
+    .asideContent {
+        margin-top: 12vh;
+        margin-right: 20px;   
+        background: $white;     
+        padding: 36vh 20px 4%;
+    }
+}
+
+
+.asideContentImg {
+    @include bkgImg($ImgSideBlog);
+    height: 38vh;
+    position: absolute;
+    width: 32vw;
+    top: 9vh;
+}
+
+.asideContent ul {
+    padding-left: 2%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    line-height: 33px;
+    list-style-type: none;
+
+    li::before {
+        content: "\2022";
+        display: inline-block;
+        width: 1rem;
+        color: $styleColor2;    
+    }
+}
+
+// blogComments styles *****************************
+
+.commentBox,
+.blogComments {margin-top: 5%;}
+
+.blogComments {padding-left: 5%;}
+
+.commentBox {display: flex;}
+
+.commentText, 
+.commentImg {padding: 0 0 10%;}
+
+.comment1Img,
+.comment2Img {
+    width: calc(20% - 4%);
+    margin-right: 4%;
+    height: 100px;
+}
+
+.comment1Img {@include bkgImg($ImgComment1);}
+
+.comment2Img {@include bkgImg($ImgComment2);}
+
+.commentText {width: 80%;}
+
+// Form styles *****************************
+
+.blogFnameInput {width: 45%;}
+
+.blogEmailInput {
+    width: calc(55% - 60px);
+    margin-left: 60px;
+}
+
+.blogFnameInput,
+.blogEmailInput {
+    border: none;
+    border-bottom: 2px solid $styleColor2;
+}
+
+.blogCommentInput {
+    width: 100%;
+    border: 2px solid $styleColor2;
+    height: 200px;
+}
+
+.blogCommentInput,
+.blogFnameInput,
+.blogEmailInput {
+    background-color: $primary;
+    margin-bottom: 3%;
+    padding: 3%;
+}
+

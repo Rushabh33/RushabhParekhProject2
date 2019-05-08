@@ -1,0 +1,78 @@
+// Header styles *****************************
+.contactHeader {
+    @include bkgImg($ImgContactHeader);
+    min-height: 70vh;
+    text-align: center;
+}
+
+.contactMainTitle {margin: 6% auto;}
+
+// *******************
+
+.contactBodyConCon {background-color: $primary;}
+
+.contactBodyCon {display: flex;}
+
+.contactInfo {
+    width: 26%;
+    margin-top: 15vh;
+}
+
+.contactForm {width: 74%;}
+
+i {
+    font-size: 1.2rem;
+    color: $black;
+}
+
+.socialmedia {
+    margin-bottom: 1%;
+
+    i:hover,
+    i:focus {color: $styleColor3;}
+    i:active {color: $styleColor1;}
+}
+
+.fab {padding-right: 3%;}
+
+// *******************
+
+.contactFormCon {
+    background: $white;
+    padding: 5%;
+    box-shadow: -35px 35px 0 0 $styleColor1;
+    min-height: 65vh;
+    margin-top: -30vh;
+}
+
+.contactFnameInput {width: 45%;}
+
+.contactEmailInput {
+    width: calc(55% - 60px);
+    margin-left: 60px;
+}
+
+.contactFnameInput,
+.contactEmailInput {
+    border: none;
+}
+
+.contactFnameInput,
+.contactEmailInput,
+.contactCommentInput {
+    border-bottom: 2px solid $styleColor2;
+} 
+
+.contactCommentInput {
+    width: 100%;
+    border: 2px solid $styleColor2;
+    height: 300px;
+}
+
+.contactCommentInput,
+.contactFnameInput,
+.contactEmailInput {
+    background-color: $white;
+    margin-bottom: 3%;
+    padding: 3% 3% 0;
+}

@@ -1,0 +1,229 @@
+// universal media breaks **********************************************
+
+@media (min-width: 1920) and (max-width: 38px) {
+    .asideContentImg {width: 38vw;}
+}
+
+@media (max-width: 1573px) {
+// HOMEPAGE ************************
+    .homeMainTitle {
+        background-color: $white2fade;
+        margin-top: 30vh;
+    }
+// CONTACT PAGE ************************
+    .contactBodyCon {flex-direction:column-reverse;}
+
+    .contactForm {margin: 0 auto;}
+
+    .contactFormCon {
+        box-shadow: none;
+        padding: 2%;
+        border: 5px solid $styleColor2;
+        margin: 2% 0 0;
+    }
+
+    .contactInfo {
+        width: 100%;
+        margin-top: 2vh;
+        text-align: center;
+
+        .fab {
+            padding: 0% 3%;
+            font-size: 2rem;
+        }
+
+        p {text-align: center;}
+    }
+}
+
+@media (max-width: 1000px) {
+// BLOG PAGE ************************
+    .blogBlogCon {display: block;}
+
+    .asideContentImg {display: none;}
+
+    .blogAside {width: 100%;}
+
+    .blogAside {
+        padding: 0;
+    
+        .asideContent {
+            margin: 0; 
+            background: $primary;     
+            padding: 10% 5% 0;
+            text-align: center;
+        }
+    }
+
+    .blogMain {width: 100%;}
+
+    .blogContentImg {
+        min-height: 40vh;
+        margin-top: 0;
+        position: relative;
+        width: 100%;
+        left: 0; 
+        bottom: 0;
+        box-shadow: none;  
+    }
+
+    .recentPostsMobile {display: none;}
+    
+    .blogBlogContent {
+        padding: 7% 5%;
+        border-right: 5px solid $styleColor1;
+    }
+}
+
+@media (max-width: 900px) {
+// HOMEPAGE ************************
+    .homeHeaderBoximg {display: none;}
+    
+    .homeHeader {background-position: 4%;}
+    
+    .homeBlogImg1,
+    .homeBlogImg2 {
+        padding: 0;
+        top: 0;
+    }
+    
+    .homeImgLeft,
+    .homeImgRight {box-shadow: none;}
+    
+// BLOG PAGE ************************
+    .blogHeader {min-height: 50vh;}
+
+    .blogMainTitle {margin: 10vh auto 0;}
+}
+
+@media (max-width: 780px) {
+// HOMEPAGE ************************
+    .homeHeader {
+        .navHeaderCon {
+            width: 100%;
+            background: $white2fade;
+        }
+        .navHeader {margin: 20px 30px;}
+    }
+    
+    .homeBlog {position: static;}
+
+    .homeMainTitle h1 {font-size: 3.9rem;}
+
+    .homeBlogImg1,
+    .homeBlogImg2 {
+        width: 100%;
+        height: 30vh;
+        position: static;
+    }
+
+    .homeBlogText,
+    .homeBlogText2{
+        width: 100%;
+        padding: 7% 0;
+        margin: 0;
+        text-align: center;     
+    }   
+
+    .homeProdValueCon {display: block;}
+
+    .homeProdValue {width: 100%;}
+    
+    .homeShowCaseCon {
+        display: block;
+        padding: 7% 0;
+        
+        .showCaseText {
+            width: 100%;
+            margin-top: 5%;
+            text-align: center;
+        }
+        
+        .showCaseImg {
+            height: 30vh;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: none;
+            background-size: contain;
+        }
+    }
+
+    .homeGallery {
+        display: block;
+        height: auto;
+        // need to nest to keep up with specificity in homeStyles.scss
+        .gallImg1 {
+            width: 100%;
+            height: 40vh;
+        }    
+    }
+    .gallImg2,
+    .gallImg3 {display: none;}
+
+// CONTACT PAGE ************************
+
+    .contactMainTitle h1 {font-size: 4rem;}
+
+    .contactFormCon {border: none;}   
+
+    .contactForm {width: 100%;}
+
+    .mobileFormWidth {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+// UNIVERSAL ************************************************
+    .wrapper {width: 90%;}
+
+//Styling the nav + unique styling for homepage
+    .homeHeader .navHeader,
+    .navHeader {margin: 10px 0;}
+   
+    .navHeaderCon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navHeader {
+        width: 100%;
+    
+        ul  {
+            display: flex; 
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            li {
+                width: 50%;
+                margin: 10px 0;}
+        } 
+    }
+    
+// HOMEPAGE ************************
+    
+    .homeMainTitle h1 {font-size: 3rem;}
+
+// BLOG PAGE ************************
+
+    .blogBlogContent h2 {font-size: 1.5rem;}
+
+    .blogComments {padding-left: 0%;}
+
+    .commentBox {
+        display: block;
+        margin-top: 5%;
+    }
+
+    .commentText {width: 100%;}
+
+    .commentBox p {text-align: center;}
+
+    .comment1Img,
+    .comment2Img {
+        width: 50%;
+        margin: 0 auto 10px;
+        min-height: 20vh;
+    }
+}

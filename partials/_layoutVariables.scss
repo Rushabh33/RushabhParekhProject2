@@ -1,0 +1,26 @@
+$ImgMap: "../capturedFinalAssets/banner.jpg ";
+$ImgBlogHeader: "../capturedFinalAssets/blogHeader.jpg";
+$ImgBlogPost: "../capturedFinalAssets/blogPostImage.jpg";
+$ImgComment1: "../capturedFinalAssets/comment1.jpg";
+$ImgComment2: "../capturedFinalAssets/comment2.jpg";
+$ImgContactHeader: "../capturedFinalAssets/contactHeader.jpg";
+$ImgGall1: "../capturedFinalAssets/galleryImage1.jpg";
+$ImgGall2: "../capturedFinalAssets/galleryImage2.jpg";
+$ImgGall3: "../capturedFinalAssets/galleryImage3.jpg";
+$ImgHeaderBox: "../capturedFinalAssets/headerBoxImage.jpg";
+$ImgHeader: "../capturedFinalAssets/headerImage.jpg";
+$ImgLeft: "../capturedFinalAssets/leftImage.jpg";
+$ImgRight: "../capturedFinalAssets/rightImage.jpg";
+$ImgSideBlog: "../capturedFinalAssets/sideBlogImage.jpg";
+$ImgProfile: "../capturedFinalAssets/smallBox.jpg";
+
+@mixin bkgImg($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+// used for blog $ImgBlogPost so that img will won't cause browser to scroll
+#overflow {overflow-x: hidden;}
