@@ -882,13 +882,12 @@ html {
 
 .navHeader ul li {
   margin-left: 9%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .navHeader ul li:hover,
 .navHeader ul li:focus {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #4ceea7;
-          text-decoration-color: #4ceea7;
+  border-bottom: 2px solid #4ceea7;
 }
 
 .navHeader ul li:active a {
