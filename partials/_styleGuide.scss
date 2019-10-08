@@ -25,7 +25,6 @@ $tTc: capitalize;
 $tTu: uppercase;
 $mediaColor: rgb(241,243,244);
 
-
 @mixin font($sizeValuePX, $fontWeight, $fontStyle, $lineHeight, $letSpace, $fontChoice, $transform) {
     font-size: ($sizeValuePX/20) * 1rem;
     color: $color;
@@ -54,11 +53,9 @@ h3 {
   @include font(32, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
 }
 
-
 h4 {
   @include font(25, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
 }
-
 
 li a {
   @include font(20, $fWb, $fSi, $lineH29, $letS1, $playFair, $tTu);
@@ -84,7 +81,6 @@ p {
 }
 
 .asideContent p {padding: 20px 0 40px;}
-
 
 .blogBlogContent .dateP {
   @include font(20, $fWNorm, $fSn, $lineH32, $letSNorm, $roboto, $tTc);
