@@ -13,6 +13,7 @@ $fSn: normal;
 $fWNorm: normal;
 $baseFontSize: 125%;
 $color: $black;
+$colorGrey: rgb(135,135,135);
 $letS1: 1px;
 $letS11: 1.1px;
 $letSNorm: normal;
@@ -22,7 +23,7 @@ $lineH29: 29px;
 $lineH92: 92px;
 $tTc: capitalize;
 $tTu: uppercase;
-
+$mediaColor: rgb(241,243,244);
 
 
 @mixin font($sizeValuePX, $fontWeight, $fontStyle, $lineHeight, $letSpace, $fontChoice, $transform) {
@@ -36,8 +37,15 @@ $tTu: uppercase;
     text-transform: $transform;
   }
 
+figcaption a {
+  @include font(12,$fWNorm,$fSn,$lineHNorm,$letSNorm, $roboto, $tTu );
+  padding: 0 5px 0;
+  color: $colorGrey;
+  text-decoration: none;
+}
+
 h1 {
-  @include font(138, $fWb, $fSi, $lineHNorm, $lineHNorm, $playFair, $tTu);
+  @include font(138, $fWb, $fSi, $lineHNorm, $letSNorm, $playFair, $tTu);
 }
 
 .blogMainTitle h1,

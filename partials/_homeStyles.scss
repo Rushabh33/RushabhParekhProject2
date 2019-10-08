@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 // Header styles *****************************
 
 .homeHeader {
@@ -163,5 +167,54 @@
     margin-right: none;
 }
 
+// Floating Auido Player Styles *****************************
 
+.audioPlayerContainer {
+    display: inline-block;
+    position: fixed;
+    z-index: 2;
+    bottom: 15px;
+    right: 30px;
+}
+
+.audioTriggerContainer {
+    display: flex;
+    align-items: center;
+    
+    .buttonAudioTrigger {
+       width: 40px;
+       height: 40px;
+       background: rgb(241,243,244);
+       border: none;
+       border-radius: 100%;
+       cursor: pointer;
+    }
+    
+    .buttonAudioTrigger:focus,
+    .buttonAudioTrigger:hover {
+       border: 1px solid black;
+       box-shadow: 0 0 0 3px rgba(210, 210, 210, 0.5);
+    }
+    
+    .buttonAudioTrigger:active {
+        border: none;
+        box-shadow: none;
+    }
+
+    .buttonAudioTrigger::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        top: -4px;
+        left: 2px;
+        border-style: solid;
+        border-width: 7px 0 7px 12px;
+        border-color: transparent transparent transparent #4a4a4a;
+        border-radius: 3px;
+      }
+    
+  }
+  
+
+  
 

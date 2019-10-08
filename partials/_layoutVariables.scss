@@ -1,18 +1,18 @@
-$ImgMap: "../capturedFinalAssets/banner.jpg ";
-$ImgBlogHeader: "../capturedFinalAssets/blogHeader.jpg";
-$ImgBlogPost: "../capturedFinalAssets/blogPostImage.jpg";
-$ImgComment1: "../capturedFinalAssets/comment1.jpg";
-$ImgComment2: "../capturedFinalAssets/comment2.jpg";
-$ImgContactHeader: "../capturedFinalAssets/contactHeader.jpg";
-$ImgGall1: "../capturedFinalAssets/galleryImage1.jpg";
-$ImgGall2: "../capturedFinalAssets/galleryImage2.jpg";
-$ImgGall3: "../capturedFinalAssets/galleryImage3.jpg";
-$ImgHeaderBox: "../capturedFinalAssets/headerBoxImage.jpg";
-$ImgHeader: "../capturedFinalAssets/headerImage.jpg";
-$ImgLeft: "../capturedFinalAssets/leftImage.jpg";
-$ImgRight: "../capturedFinalAssets/rightImage.jpg";
-$ImgSideBlog: "../capturedFinalAssets/sideBlogImage.jpg";
-$ImgProfile: "../capturedFinalAssets/smallBox.jpg";
+$ImgMap: "../assets/banner.jpg ";
+$ImgBlogHeader: "../assets/blogHeader.jpg";
+$ImgBlogPost: "../assets/blogPostImage.jpg";
+$ImgComment1: "../assets/comment1.jpg";
+$ImgComment2: "../assets/comment2.jpg";
+$ImgContactHeader: "../assets/contactHeader.jpg";
+$ImgGall1: "../assets/galleryImage1.jpg";
+$ImgGall2: "../assets/galleryImage2.jpg";
+$ImgGall3: "../assets/galleryImage3.jpg";
+$ImgHeaderBox: "../assets/headerBoxImage.jpg";
+$ImgHeader: "../assets/headerImage.jpg";
+$ImgLeft: "../assets/leftImage.jpg";
+$ImgRight: "../assets/rightImage.jpg";
+$ImgSideBlog: "../assets/sideBlogImage.jpg";
+$ImgProfile: "../assets/smallBox.jpg";
 
 @mixin bkgImg($url) {
     background-image: url($url);
