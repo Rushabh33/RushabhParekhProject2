@@ -1,10 +1,10 @@
-$primary: #effdf3;
-$styleColor1: #fdfa69;
-$styleColor2: #4ceea7;
-$styleColor3: #267753;
-$white: #fafafa;
+$primary: rgb(239,253,243);
+$styleColor1: rgb(253,250,105);
+$styleColor2: rgb(76,238,167);
+$styleColor3: rgb(38,119,83);
+$white: rgb(250,250,250);
 $white2fade: rgba(243, 243, 243, 0.8); 
-$black: #2c2c2c;
+$black: rgb(44,44,44);
 $playFair: 'Playfair Display', serif;
 $roboto: 'Roboto', sans-serif;
 $fWb: 700;
@@ -25,7 +25,6 @@ $tTc: capitalize;
 $tTu: uppercase;
 $mediaColor: rgb(241,243,244);
 
-
 @mixin font($sizeValuePX, $fontWeight, $fontStyle, $lineHeight, $letSpace, $fontChoice, $transform) {
     font-size: ($sizeValuePX/20) * 1rem;
     color: $color;
@@ -36,13 +35,6 @@ $mediaColor: rgb(241,243,244);
     letter-spacing: $letSpace;
     text-transform: $transform;
   }
-
-figcaption a {
-  @include font(12,$fWNorm,$fSn,$lineHNorm,$letSNorm, $roboto, $tTu );
-  padding: 0 5px 0;
-  color: $colorGrey;
-  text-decoration: none;
-}
 
 h1 {
   @include font(138, $fWb, $fSi, $lineHNorm, $letSNorm, $playFair, $tTu);
@@ -61,11 +53,9 @@ h3 {
   @include font(32, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
 }
 
-
 h4 {
   @include font(25, $fWb, $fSi, $lineHNorm, $letS1, $playFair, $tTu);
 }
-
 
 li a {
   @include font(20, $fWb, $fSi, $lineH29, $letS1, $playFair, $tTu);
@@ -92,7 +82,6 @@ p {
 
 .asideContent p {padding: 20px 0 40px;}
 
-
 .blogBlogContent .dateP {
   @include font(20, $fWNorm, $fSn, $lineH32, $letSNorm, $roboto, $tTc);
   padding: 5px 0 10%;
@@ -112,4 +101,11 @@ input::placeholder,
 textarea::placeholder {
   color: $black;
   opacity: 1;
+}
+
+figcaption a {
+  @include font(12,$fWNorm,$fSn,$lineHNorm,$letSNorm, $roboto, $tTu );
+  padding: 0 5px 0;
+  color: $colorGrey;
+  text-decoration: none;
 }

@@ -179,20 +179,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-figcaption a {
-  font-size: 0.6rem;
-  color: #2c2c2c;
-  font-weight: normal;
-  font-style: normal;
-  line-height: normal;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  padding: 0 5px 0;
-  color: #878787;
-  text-decoration: none;
-}
-
 h1 {
   font-size: 6.9rem;
   color: #2c2c2c;
@@ -359,6 +345,20 @@ input::placeholder,
 textarea::placeholder {
   color: #2c2c2c;
   opacity: 1;
+}
+
+figcaption a {
+  font-size: 0.6rem;
+  color: #2c2c2c;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  padding: 0 5px 0;
+  color: #878787;
+  text-decoration: none;
 }
 
 #overflow {
