@@ -60,7 +60,7 @@ form {
 }
 
 
-// link that look like Buttons styles *****
+// Links/Button-like elements across pages styles *****
 
 button,
 .button {background-color: $styleColor2;}
@@ -85,7 +85,7 @@ button:active,
     background-color: $white;
 }
 
-// copyright styles *****
+// copyright styles across pages *****
 
 .copyright {background-color: black;}
 
@@ -94,6 +94,13 @@ button:active,
     padding: 10px 0;
     text-align: center;
 }
+
+// Core utitlity classes across pages
+.remove {
+    display: none;
+}
+
+
 
 
 @import "../partials/mediaQueries";

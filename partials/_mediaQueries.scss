@@ -178,6 +178,10 @@
 // UNIVERSAL ************************************************
     .wrapper {width: 90%;}
 
+    .audioPlayerContainer audio {
+        width: 250px;
+    }
+
 //Styling the nav + unique styling for homepage
     .homeHeader .navHeader,
     .navHeader {margin: 10px 0;}
